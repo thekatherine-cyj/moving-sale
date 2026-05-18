@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>帶孩子旅居世界，出走前的最後一哩路 · @thekatherine.cyj</title>
+<meta name="description" content="小漫（4歲）＆ 小布（2歲）的媽媽，帶著她們去看世界前的小清倉。Vintage 北歐老件 · 雲林斗南面交"/>
+<meta property="og:title" content="帶孩子旅居世界，出走前的最後一哩路"/>
+<meta property="og:description" content="Vintage 北歐老件特賣 · 雲林斗南 · IG @thekatherine.cyj"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --cream:#FAF7F2;--warm:#E8DECE;--clay:#C4956A;--brown:#7B5B3A;--deep:#3D2B1F;--sage:#8A9E7A;
+  --radius-sm:6px;--radius-md:10px;--radius-lg:16px;
+}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#F0EAE0;
+  min-height:100vh;
+  padding:1.5rem 1rem 3rem;
+  display:flex;justify-content:center;
+}
+.page{width:100%;max-width:600px;}
+
+/* ── Hero ── */
+.hero{
+  background:var(--brown);
+  border-radius:var(--radius-lg) var(--radius-lg) 0 0;
+  padding:2.5rem 2rem 3rem;
+  text-align:center;
+  position:relative;
+}
+.hero::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:28px;
+  background:var(--cream);clip-path:ellipse(55% 100% at 50% 100%);
+}
+.hero-eyebrow{
+  font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.2em;
+  color:rgba(250,247,242,.45);text-transform:uppercase;margin-bottom:.75rem;
+}
+.hero-title{
+  font-family:'Cormorant Garamond',serif;font-size:clamp(22px,5vw,30px);
+  color:#FAF7F2;font-weight:400;line-height:1.45;
+}
+.hero-title em{font-style:italic;color:#E8B88A;}
+.hero-sub{font-size:12px;color:rgba(250,247,242,.62);margin-top:10px;line-height:1.75;}
+.hero-ig{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(250,247,242,.12);border:0.5px solid rgba(250,247,242,.28);
+  border-radius:20px;padding:5px 15px;font-size:12px;color:#FAF7F2;
+  margin-top:14px;text-decoration:none;letter-spacing:.04em;transition:background .2s;
+}
+.hero-ig:hover{background:rgba(250,247,242,.22);}
+
+/* ── Body wrapper ── */
+.body{
+  background:var(--cream);
+  border:0.5px solid #ddd4c6;
+  border-top:none;
+  border-radius:0 0 var(--radius-lg) var(--radius-lg);
+  padding-bottom:2rem;
+}
+
+/* ── Phases ── */
+.phases{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:1.5rem 1.5rem 0;}
+.phase{
+  background:#fff;border:0.5px solid var(--warm);
+  border-radius:var(--radius-md);padding:10px 14px;
+}
+.phase-eyebrow{font-size:9px;font-weight:500;color:var(--sage);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;}
+.phase-date{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--brown);}
+.phase-zh{font-size:10px;color:var(--sage);margin-top:2px;}
+.phase-active{border-color:var(--clay);background:rgba(196,149,106,.07);}
+.phase-active .phase-eyebrow{color:var(--clay);}
+.dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--clay);margin-right:5px;vertical-align:middle;}
+
+/* ── Info accordions ── */
+.info-section{padding:1.25rem 1.5rem 0;}
+.info-card{background:#fff;border:0.5px solid var(--warm);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:10px;}
+.info-header{
+  padding:12px 14px;cursor:pointer;display:flex;align-items:center;
+  justify-content:space-between;user-select:none;
+}
+.info-header:hover{background:rgba(196,149,106,.04);}
+.info-header-left{display:flex;align-items:center;gap:9px;}
+.info-icon{
+  width:30px;height:30px;border-radius:50%;
+  background:rgba(196,149,106,.12);display:flex;align-items:center;
+  justify-content:center;color:var(--clay);font-size:15px;flex-shrink:0;
+}
+.info-title{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--deep);}
+.info-chevron{color:var(--clay);font-size:14px;transition:transform .25s;}
+.info-chevron.open{transform:rotate(180deg);}
+.info-body{display:none;padding:0 14px 16px;border-top:0.5px solid var(--warm);}
+.info-body.open{display:block;}
+
+/* Steps */
+.steps{display:flex;flex-direction:column;gap:0;padding-top:14px;}
+.step{display:flex;gap:12px;align-items:flex-start;padding-bottom:16px;position:relative;}
+.step:not(:last-child)::after{content:'';position:absolute;left:12px;top:26px;bottom:0;width:0.5px;background:var(--warm);}
+.step-num{width:26px;height:26px;border-radius:50%;background:var(--brown);color:#FAF7F2;font-size:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:500;}
+.step-title{font-size:13px;font-weight:500;color:var(--deep);margin-bottom:2px;}
+.step-desc{font-size:11px;color:var(--sage);line-height:1.6;}
+
+/* Pickup */
+.pickup-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-top:14px;}
+.pickup-opt{background:var(--cream);border:0.5px solid var(--warm);border-radius:var(--radius-md);padding:12px;}
+.pickup-opt-icon{font-size:20px;margin-bottom:6px;}
+.pickup-opt-title{font-size:12px;font-weight:500;color:var(--brown);margin-bottom:3px;}
+.pickup-opt-desc{font-size:11px;color:var(--sage);line-height:1.55;}
+
+/* Payment */
+.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding-top:14px;}
+.pay-opt{background:var(--cream);border:0.5px solid var(--warm);border-radius:var(--radius-md);padding:10px 12px;display:flex;align-items:center;gap:8px;}
+.pay-icon{font-size:18px;}
+.pay-label{font-size:12px;color:var(--brown);font-weight:500;}
+.trade-intro{font-size:12px;color:var(--sage);line-height:1.6;margin:12px 0 10px;}
+.trade-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+.trade-item{background:var(--cream);border:0.5px solid var(--warm);border-radius:var(--radius-md);padding:9px 12px;display:flex;align-items:center;gap:9px;}
+.trade-emoji{font-size:17px;flex-shrink:0;}
+.trade-name{font-size:11px;color:var(--deep);line-height:1.4;}
+
+/* ── Products ── */
+.section-label{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:13px;color:var(--clay);letter-spacing:.06em;
+  padding:1.5rem 1.5rem .25rem;
+}
+.chips{display:flex;gap:6px;padding:.5rem 1.5rem .5rem;flex-wrap:wrap;}
+.chip{
+  padding:4px 14px;border-radius:20px;border:0.5px solid var(--warm);
+  font-size:11px;background:transparent;color:var(--brown);
+  cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s;
+}
+.chip:hover{background:rgba(123,91,58,.08);}
+.chip.on{background:var(--brown);color:var(--cream);border-color:var(--brown);}
+
+.srch{padding:.25rem 1.5rem .75rem;position:relative;}
+.srch i{position:absolute;left:23px;top:50%;transform:translateY(-50%);color:var(--clay);font-size:15px;pointer-events:none;}
+.srch input{
+  width:100%;padding:8px 12px 8px 34px;
+  border:0.5px solid var(--warm);border-radius:var(--radius-md);
+  background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;
+  color:var(--deep);outline:none;transition:border-color .2s;
+}
+.srch input:focus{border-color:var(--clay);}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:0 1.5rem;}
+.card{
+  background:#fff;border:0.5px solid var(--warm);
+  border-radius:var(--radius-lg);overflow:hidden;
+  cursor:pointer;transition:transform .18s,box-shadow .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(123,91,58,.12);}
+.card-img{
+  width:100%;aspect-ratio:1;
+  background:linear-gradient(135deg,#EDE0CE 0%,#D4BFA0 100%);
+  display:flex;align-items:center;justify-content:center;position:relative;
+  overflow:hidden;
+}
+.card-img img{width:100%;height:100%;object-fit:cover;}
+.card-img .card-placeholder{font-size:38px;color:var(--brown);opacity:.35;}
+.origin-tag{
+  position:absolute;top:8px;left:8px;
+  font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:.1em;
+  color:var(--deep);background:rgba(250,247,242,.88);
+  padding:2px 8px;border-radius:2px;font-style:italic;
+}
+.tap-hint{
+  position:absolute;bottom:8px;right:8px;font-size:9px;
+  color:rgba(61,43,31,.5);background:rgba(250,247,242,.72);
+  padding:2px 7px;border-radius:10px;display:flex;align-items:center;gap:3px;
+}
+.card-body{padding:9px 11px 12px;}
+.card-name{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--deep);font-weight:400;line-height:1.4;}
+.card-price{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--clay);margin-top:5px;}
+.vtag{display:inline-block;font-size:9px;padding:1px 7px;border-radius:3px;background:rgba(123,91,58,.08);color:var(--brown);margin-top:3px;letter-spacing:.04em;}
+.sold-label{display:inline-block;font-size:9px;padding:1px 7px;border-radius:3px;background:#ece8e2;color:#aaa;margin-top:3px;}
+.card.sold .card-img{opacity:.5;}
+.card.sold .card-price{text-decoration:line-through;color:#bbb;font-size:12px;}
+
+/* ── Footer ── */
+.footer{border-top:0.5px solid var(--warm);margin:1.5rem 1.5rem 0;padding-top:1.25rem;text-align:center;}
+.footer-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--clay);line-height:1.75;}
+.footer-ig{display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-size:11px;color:var(--brown);font-weight:500;}
+.footer-ig a{color:inherit;text-decoration:none;}
+.footer-ig a:hover{text-decoration:underline;}
+.footer-copy{font-size:10px;color:#c0b8ae;margin-top:12px;letter-spacing:.04em;}
+
+/* ── Modal ── */
+.overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(61,43,31,.55);z-index:200;
+  align-items:center;justify-content:center;padding:1rem;
+}
+.overlay.open{display:flex;}
+.modal{
+  background:var(--cream);border-radius:var(--radius-lg);
+  width:100%;max-width:500px;max-height:92vh;overflow-y:auto;position:relative;
+  animation:modalIn .25s ease;
+}
+@keyframes modalIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+.modal-close{
+  position:absolute;top:12px;right:12px;
+  background:rgba(250,247,242,.92);border:0.5px solid var(--warm);
+  border-radius:50%;width:32px;height:32px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;z-index:10;color:var(--brown);font-size:16px;
+}
+.modal-close:hover{background:#fff;}
+
+.gallery{position:relative;width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#EDE0CE,#D4BFA0);overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) 0 0;}
+.gal-main{width:100%;height:100%;display:flex;align-items:center;justify-content:center;position:relative;}
+.gal-main img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+.gal-main .gal-placeholder{font-size:68px;color:var(--brown);opacity:.3;}
+.gal-origin{position:absolute;top:12px;left:12px;font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.1em;color:var(--deep);background:rgba(250,247,242,.88);padding:3px 10px;border-radius:2px;font-style:italic;}
+.gal-arr{
+  position:absolute;top:50%;transform:translateY(-50%);
+  background:rgba(250,247,242,.82);border:none;border-radius:50%;
+  width:32px;height:32px;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;color:var(--brown);font-size:16px;transition:background .15s;
+}
+.gal-arr:hover{background:#fff;}
+.gal-arr.left{left:10px;}
+.gal-arr.right{right:10px;}
+.gal-dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px;}
+.gal-dot{width:6px;height:6px;border-radius:50%;background:rgba(250,247,242,.5);border:none;cursor:pointer;padding:0;transition:background .15s;}
+.gal-dot.on{background:#FAF7F2;}
+
+.modal-body{padding:1.25rem 1.5rem 2rem;}
+.modal-origin{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:.1em;color:var(--sage);margin-bottom:4px;}
+.modal-name{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--deep);font-weight:400;line-height:1.35;}
+.modal-price{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--clay);margin-top:8px;}
+.modal-divider{border:none;border-top:0.5px solid var(--warm);margin:1rem 0;}
+.modal-desc{font-size:13px;color:var(--deep);line-height:1.8;white-space:pre-line;}
+.modal-meta{margin-top:1rem;display:flex;flex-wrap:wrap;gap:7px;}
+.meta-tag{font-size:11px;padding:3px 11px;border-radius:20px;border:0.5px solid var(--warm);color:var(--brown);}
+.modal-cta{
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  margin-top:1.5rem;background:var(--brown);color:#FAF7F2;
+  border:none;border-radius:var(--radius-md);padding:12px 20px;
+  font-size:13px;font-family:'DM Sans',sans-serif;font-weight:500;
+  cursor:pointer;width:100%;text-decoration:none;transition:background .2s;
+}
+.modal-cta:hover{background:var(--deep);}
+
+.empty{padding:3rem;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--clay);}
+
+/* ── Responsive ── */
+@media(max-width:400px){
+  body{padding:1rem .5rem 2rem;}
+  .trade-grid{grid-template-columns:1fr;}
+  .pickup-row{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<main class="page" role="main">
+
+  <div class="hero">
+    <div class="hero-eyebrow">Moving Sale · Vintage Collection</div>
+    <h1 class="hero-title">帶孩子旅居世界<br><em>出走前的最後一哩路</em></h1>
+    <p class="hero-sub">小漫（4歲）＆ 小布（2歲）的媽媽，帶著她們去看世界前的小清倉<br>Vintage 北歐老件 · 雲林斗南面交</p>
+    <a class="hero-ig" href="https://instagram.com/thekatherine.cyj" target="_blank" rel="noopener">
+      <i class="ti ti-brand-instagram" aria-hidden="true"></i>@thekatherine.cyj
+    </a>
+  </div>
+
+  <div class="body">
+
+    <div class="phases">
+      <div class="phase phase-active">
+        <div class="phase-eyebrow"><span class="dot"></span>第一階段 · 現正販售</div>
+        <div class="phase-date">May 16 — May 31</div>
+        <div class="phase-zh">5／16 — 5／31</div>
+      </div>
+      <div class="phase">
+        <div class="phase-eyebrow">第二階段</div>
+        <div class="phase-date">Jun 1 — Jun 10</div>
+        <div class="phase-zh">6／1 — 6／10</div>
+      </div>
+    </div>
+
+    <div class="info-section">
+
+      <!-- 購買流程 -->
+      <div class="info-card">
+        <div class="info-header" onclick="toggle('flow')" role="button" aria-expanded="false" aria-controls="body-flow">
+          <div class="info-header-left">
+            <div class="info-icon"><i class="ti ti-shopping-bag" aria-hidden="true"></i></div>
+            <div class="info-title">購買流程</div>
+          </div>
+          <i class="ti ti-chevron-down info-chevron" id="chev-flow" aria-hidden="true"></i>
+        </div>
+        <div class="info-body" id="body-flow">
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <div class="step-title">私訊 IG Inbox</div>
+                <div class="step-desc">到 @thekatherine.cyj 傳送私訊</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <div class="step-title">告知想購買的商品</div>
+                <div class="step-desc">貼上商品名稱或截圖，說明數量</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <div class="step-title">完成付款 / 確認換物</div>
+                <div class="step-desc">匯款或議定換物後即確認訂單，先付先得</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 取貨方式 -->
+      <div class="info-card">
+        <div class="info-header" onclick="toggle('pickup')" role="button" aria-expanded="false" aria-controls="body-pickup">
+          <div class="info-header-left">
+            <div class="info-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+            <div class="info-title">取貨方式</div>
+          </div>
+          <i class="ti ti-chevron-down info-chevron" id="chev-pickup" aria-hidden="true"></i>
+        </div>
+        <div class="info-body" id="body-pickup">
+          <div class="pickup-row">
+            <div class="pickup-opt">
+              <div class="pickup-opt-icon">🤝</div>
+              <div class="pickup-opt-title">約時間面交</div>
+              <div class="pickup-opt-desc">依商品所在地點約定時間，買家自取</div>
+            </div>
+            <div class="pickup-opt">
+              <div class="pickup-opt-icon">🚚</div>
+              <div class="pickup-opt-title">回頭車運送</div>
+              <div class="pickup-opt-desc">買家自行聯繫回頭車，運費由買家負擔</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 付款 & 換物 -->
+      <div class="info-card">
+        <div class="info-header" onclick="toggle('pay')" role="button" aria-expanded="false" aria-controls="body-pay">
+          <div class="info-header-left">
+            <div class="info-icon"><i class="ti ti-repeat" aria-hidden="true"></i></div>
+            <div class="info-title">付款方式 ＆ 換物清單</div>
+          </div>
+          <i class="ti ti-chevron-down info-chevron" id="chev-pay" aria-hidden="true"></i>
+        </div>
+        <div class="info-body" id="body-pay">
+          <div class="payment-grid">
+            <div class="pay-opt"><div class="pay-icon">💵</div><div class="pay-label">現金面交</div></div>
+            <div class="pay-opt"><div class="pay-icon">🏦</div><div class="pay-label">銀行轉帳</div></div>
+          </div>
+          <p class="trade-intro">或以下物品換物，歡迎私訊議定：</p>
+          <div class="trade-grid">
+            <div class="trade-item"><div class="trade-emoji">📖</div><div class="trade-name">Kobo Libra 7吋<br>電子書閱讀器</div></div>
+            <div class="trade-item"><div class="trade-emoji">📷</div><div class="trade-name">Ricoh GR<br>隨身相機</div></div>
+            <div class="trade-item"><div class="trade-emoji">📱</div><div class="trade-name">iPad / iPad Pro 11吋</div></div>
+            <div class="trade-item"><div class="trade-emoji">💻</div><div class="trade-name">MacBook Pro / Air 14吋</div></div>
+            <div class="trade-item"><div class="trade-emoji">⌚</div><div class="trade-name">Garmin 或 Apple Watch</div></div>
+            <div class="trade-item"><div class="trade-emoji">🎒</div><div class="trade-name">旅行背包</div></div>
+            <div class="trade-item"><div class="trade-emoji">💨</div><div class="trade-name">旅行吹風機</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /info-section -->
+
+    <p class="section-label">— 商品列表 Items —</p>
+
+    <div class="chips" role="group" aria-label="商品分類篩選">
+      <button class="chip on" onclick="setcat(this,'all')">全部</button>
+      <button class="chip" onclick="setcat(this,'furniture')">家具 Furniture</button>
+      <button class="chip" onclick="setcat(this,'lighting')">燈具 Lighting</button>
+    </div>
+
+    <div class="srch">
+      <i class="ti ti-search" aria-hidden="true"></i>
+      <input type="text" placeholder="搜尋商品..." oninput="dosearch(this.value)" aria-label="搜尋商品"/>
+    </div>
+
+    <div class="grid" id="grid" role="list"></div>
+
+    <footer class="footer">
+      <p class="footer-text">每一件老件都帶著歲月的溫度，希望它們在你家繼續發光。</p>
+      <div class="footer-ig">
+        <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+        喜歡請到 IG 私訊 <a href="https://instagram.com/thekatherine.cyj" target="_blank" rel="noopener">@thekatherine.cyj</a>・雲林斗南面交
+      </div>
+      <p class="footer-copy">© 2024 thekatherine.cyj · All rights reserved</p>
+    </footer>
+
+  </div><!-- /body -->
+
+</main>
+
+<!-- Modal -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="closeIfBg(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="關閉">
+      <i class="ti ti-x" aria-hidden="true"></i>
+    </button>
+    <div class="gallery">
+      <div class="gal-main" id="galMain"></div>
+      <div class="gal-origin" id="galOrigin"></div>
+      <button class="gal-arr left" onclick="slideGallery(-1)" aria-label="上一張">
+        <i class="ti ti-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button class="gal-arr right" onclick="slideGallery(1)" aria-label="下一張">
+        <i class="ti ti-chevron-right" aria-hidden="true"></i>
+      </button>
+      <div class="gal-dots" id="galDots"></div>
+    </div>
+    <div class="modal-body">
+      <p class="modal-origin" id="mOrigin"></p>
+      <h2 class="modal-name" id="modalTitle"></h2>
+      <p class="modal-price" id="mPrice"></p>
+      <hr class="modal-divider"/>
+      <p class="modal-desc" id="mDesc"></p>
+      <div class="modal-meta" id="mMeta"></div>
+      <a class="modal-cta" href="https://instagram.com/thekatherine.cyj" target="_blank" rel="noopener">
+        <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+        IG 私訊詢問 @thekatherine.cyj
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── 商品資料 ───────────────────────────────────────────
+// 如何新增商品照片：
+//   把 imgs 陣列裡的字串換成照片 URL，例如：
+//   imgs: ['https://i.imgur.com/xxxx.jpg', 'https://i.imgur.com/yyyy.jpg']
+//
+// 如何標記已售出：sold: true
+// ────────────────────────────────────────────────────────
+const DATA = [
+  {
+    id: 1,
+    name: '床頭壁掛櫃（一對）',
+    price: 9800,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: [],   // ← 放照片 URL，留空顯示預設圖示
+    desc: '丹麥製老件壁掛式床頭收納櫃，一對販售。\n\n淺色木皮搭配金屬五金，線條簡約俐落，掛上牆面即成空間亮點。適合雙人床兩側對稱擺放，收納小物兼具裝飾性。\n\n年代約 1960s，整體狀況良好，有自然歲月痕跡。',
+    tags: ['1960s', '一對販售', '壁掛式', '第一階段']
+  },
+  {
+    id: 2,
+    name: 'Teak 針線車',
+    price: 18000,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: [],
+    desc: '丹麥柚木（Teak）針線車，附多層收納抽屜與布袋。\n\n此款針線車在北歐家庭中用於收納裁縫工具，現今多作為客廳邊几或床頭小桌使用，移動方便且實用性高。\n\n柚木紋路清晰，整體保存完整。',
+    tags: ['Teak 柚木', '多層收納', '1960s', '第一階段']
+  },
+  {
+    id: 3,
+    name: '柚木 二連几',
+    price: 7800,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: [],
+    desc: '丹麥柚木二連几，兩張高低相連，可拆開獨立使用或疊放收納。\n\n纖細的桌腳與光滑的柚木桌面是北歐中古設計的代表性語彙。擺在沙發旁或床邊皆宜。\n\n狀況良好，桌面有輕微使用痕跡，符合老件自然感。',
+    tags: ['Teak 柚木', '可拆式', '第一階段']
+  },
+  {
+    id: 4,
+    name: '柚木 大邊櫃',
+    price: 62000,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: [],
+    desc: '丹麥柚木大型邊櫃，附推拉門與抽屜，收納容量充裕。\n\n此尺寸的邊櫃在收藏市場中十分稀有，適合作為電視櫃、玄關櫃或餐廳收納使用。\n\n柚木表面色澤溫潤，五金功能正常，整體狀況佳。',
+    tags: ['Teak 柚木', '大型', '推拉門', '第一階段']
+  },
+  {
+    id: 5,
+    name: '柚木 延伸餐桌',
+    price: 29800,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: [],
+    desc: '丹麥柚木延伸餐桌，中央可拉開放置延伸板，從 4 人桌擴展為 6-8 人桌。\n\n北歐餐桌的實用設計典範，平日收起即是優雅的小餐桌，有客人來時可輕鬆延伸。\n\n延伸機構順暢，桌面保存良好。',
+    tags: ['Teak 柚木', '可延伸', '4-8 人', '第一階段']
+  },
+  {
+    id: 6,
+    name: '壓花玻璃 壁燈（一對）',
+    price: 7800,
+    cat: 'lighting',
+    origin: 'British',
+    sold: false,
+    imgs: [],
+    desc: '英國老件壓花玻璃壁燈，一對販售。\n\n壓花玻璃罩在燈光照射下會投射出細膩的光影紋路，為牆面增添溫柔的氛圍感。黃銅燈座歷經歲月，色澤更為沉穩迷人。\n\n電路已翻新，可直接使用，適合 E27 燈泡。',
+    tags: ['British', '壓花玻璃', '一對販售', 'E27', '第一階段']
+  },
+  {
+    id: 7,
+    name: '壓花玻璃 黃銅吸頂燈',
+    price: 14800,
+    cat: 'lighting',
+    origin: 'British',
+    sold: false,
+    imgs: [],
+    desc: '英國老件壓花玻璃黃銅吸頂燈。\n\n圓形壓花玻璃罩搭配厚實黃銅底座，整體比例優美，適合廚房、餐廳或走廊使用。開燈後玻璃紋路若隱若現，質感細膩。\n\n直徑約 30cm，電路狀況良好。',
+    tags: ['British', '壓花玻璃', '黃銅', '吸頂', '第一階段']
+  },
+  {
+    id: 8,
+    name: 'Verona Pendant 黃銅吊燈',
+    price: 33000,
+    cat: 'lighting',
+    origin: 'Danish',
+    sold: false,
+    imgs: [],
+    desc: '丹麥 Verona Pendant 黃銅吊燈，造型典雅，為餐桌或吧台區的點睛之作。\n\n黃銅材質歷久彌新，燈罩弧線優美。此款在丹麥設計史上有一定的收藏地位，市面上流通數量有限。\n\n整體狀況極佳，電路正常。',
+    tags: ['Verona', '黃銅', '吊燈', '第一階段']
+  },
+  {
+    id: 9,
+    name: '復古黃銅 壓花玻璃吊燈',
+    price: 148000,
+    cat: 'lighting',
+    origin: 'Danish',
+    sold: false,
+    imgs: [],
+    desc: '丹麥復古黃銅壓花玻璃吊燈，本批老件中最為珍稀的一件。\n\n尺寸碩大，黃銅框架工藝精湛，壓花玻璃罩多面拼接，開燈後整個空間沐浴在柔和而有層次的光線之中。適合挑高空間、餐廳主燈或精品店鋪使用。\n\n年代約 1950-60s，保存狀況極佳，為難得一見的精品。',
+    tags: ['1950-60s', '黃銅', '壓花玻璃', '稀有', '第一階段']
+  }
+];
+
+// ─── 圖示對應（無照片時使用）───────────────────────────
+const ICONS = {
+  furniture: 'ti-armchair',
+  lighting: 'ti-lamp'
+};
+
+// ─── 狀態 ───────────────────────────────────────────────
+let cat = 'all', q = '', gIdx = 0, gCurrent = null;
+
+// ─── 工具 ───────────────────────────────────────────────
+function fmt(n) { return 'NT$' + n.toLocaleString(); }
+
+// ─── 手風琴 ─────────────────────────────────────────────
+function toggle(key) {
+  const body = document.getElementById('body-' + key);
+  const chev = document.getElementById('chev-' + key);
+  const hdr  = chev.closest('.info-header');
+  const open = body.classList.toggle('open');
+  chev.classList.toggle('open', open);
+  hdr.setAttribute('aria-expanded', open);
+}
+
+// ─── 商品列表 ────────────────────────────────────────────
+function render() {
+  const list = DATA.filter(i =>
+    (cat === 'all' || i.cat === cat) &&
+    (!q || i.name.includes(q) || i.origin.toLowerCase().includes(q.toLowerCase()))
+  );
+  const g = document.getElementById('grid');
+  if (!list.length) {
+    g.innerHTML = '<div class="empty">— 找不到符合的商品 —</div>';
+    return;
+  }
+  g.innerHTML = list.map(i => {
+    const hasImg = i.imgs && i.imgs.length > 0;
+    const thumb  = hasImg ? `<img src="${i.imgs[0]}" alt="${i.name}" loading="lazy"/>` : `<i class="ti ${ICONS[i.cat] || 'ti-box'} card-placeholder" aria-hidden="true"></i>`;
+    return `
+      <div class="card${i.sold ? ' sold' : ''}" onclick="openModal(${i.id})" role="listitem" tabindex="0" aria-label="${i.name} ${fmt(i.price)}">
+        <div class="card-img">
+          ${thumb}
+          <div class="origin-tag">${i.origin}</div>
+          <div class="tap-hint"><i class="ti ti-zoom-in" style="font-size:10px" aria-hidden="true"></i>${hasImg ? i.imgs.length + '張' : '詳情'}</div>
+        </div>
+        <div class="card-body">
+          <div class="card-name">${i.name}</div>
+          <div class="card-price">${fmt(i.price)}</div>
+          ${i.sold ? '<div class="sold-label">已售出</div>' : '<div class="vtag">Vintage</div>'}
+        </div>
+      </div>`;
+  }).join('');
+
+  // keyboard support
+  g.querySelectorAll('.card').forEach(el => {
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') el.click(); });
+  });
+}
+
+// ─── Modal ───────────────────────────────────────────────
+function openModal(id) {
+  gCurrent = DATA.find(i => i.id === id);
+  if (!gCurrent) return;
+  gIdx = 0;
+  document.getElementById('galOrigin').textContent = gCurrent.origin;
+  document.getElementById('mOrigin').textContent = gCurrent.origin + ' Vintage';
+  document.getElementById('modalTitle').textContent = gCurrent.name;
+  document.getElementById('mPrice').textContent = fmt(gCurrent.price);
+  document.getElementById('mDesc').textContent = gCurrent.desc;
+  document.getElementById('mMeta').innerHTML = gCurrent.tags.map(t => `<span class="meta-tag">${t}</span>`).join('');
+  renderGallery();
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('modal').focus();
+}
+
+function renderGallery() {
+  const imgs = gCurrent.imgs || [];
+  const hasImg = imgs.length > 0;
+  const main = document.getElementById('galMain');
+  if (hasImg) {
+    main.innerHTML = `<img src="${imgs[gIdx]}" alt="${gCurrent.name} 第 ${gIdx+1} 張照片" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>`;
+  } else {
+    main.innerHTML = `<i class="ti ${ICONS[gCurrent.cat] || 'ti-box'} gal-placeholder" aria-hidden="true"></i>`;
+  }
+  const dots = document.getElementById('galDots');
+  dots.innerHTML = (hasImg ? imgs : [null]).map((_, i) =>
+    `<button class="gal-dot${i === gIdx ? ' on' : ''}" onclick="goSlide(${i})" aria-label="第${i+1}張"></button>`
+  ).join('');
+  // hide arrows if only 1 image
+  document.querySelectorAll('.gal-arr').forEach(a => a.style.display = (hasImg && imgs.length > 1) ? '' : 'none');
+}
+
+function slideGallery(dir) {
+  const len = (gCurrent.imgs || []).length || 1;
+  gIdx = (gIdx + dir + len) % len;
+  renderGallery();
+}
+function goSlide(i) { gIdx = i; renderGallery(); }
+
+function closeModal() {
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeIfBg(e) { if (e.target === document.getElementById('overlay')) closeModal(); }
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+  if (document.getElementById('overlay').classList.contains('open')) {
+    if (e.key === 'ArrowLeft') slideGallery(-1);
+    if (e.key === 'ArrowRight') slideGallery(1);
+  }
+});
+
+// ─── Filter ──────────────────────────────────────────────
+function setcat(el, c) {
+  cat = c;
+  document.querySelectorAll('.chip').forEach(x => x.classList.remove('on'));
+  el.classList.add('on');
+  render();
+}
+function dosearch(v) { q = v; render(); }
+
+// ─── Init ────────────────────────────────────────────────
+render();
+</script>
+</body>
+</html>
