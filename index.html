@@ -449,102 +449,232 @@ body{
 const DATA = [
   {
     id: 1,
-    name: '床頭壁掛櫃（一對）',
+    name: '丹麥 床頭壁掛櫃（一對）',
     price: 9800,
     cat: 'furniture',
     origin: 'Danish',
+    vintage: true,
     sold: false,
-    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/01_%E5%BA%8A%E9%A0%AD%E5%A3%81%E6%8E%9B%E6%AB%83_1.JPG'],   // ← 放照片 URL，留空顯示預設圖示
-    desc: '丹麥製老件壁掛式床頭收納櫃，一對販售。\n\n淺色木皮搭配金屬五金，線條簡約俐落，掛上牆面即成空間亮點。適合雙人床兩側對稱擺放，收納小物兼具裝飾性。\n\n年代約 1960s，整體狀況良好，有自然歲月痕跡。',
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/01_%E5%BA%8A%E9%A0%AD%E5%A3%81%E6%8E%9B%E6%AB%83_1.JPG'],
+    desc: '丹麥製老件壁掛式床頭收納櫃，一對販售。\n\n淺色木皮搭配金屬五金，線條簡約俐落，掛上牆面即成空間亮點。適合雙人床兩側對稱擺放，收納小物兼具裝飾性。\n\n年代約 1960s，整體狀況良好，有自然歲月痕跡。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['1960s', '一對販售', '壁掛式', '第一階段']
   },
   {
     id: 2,
-    name: 'Teak 針線車',
+    name: '丹麥 Teak 針線車',
     price: 18000,
     cat: 'furniture',
     origin: 'Danish',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/08_Teak_%E9%87%9D%E7%B7%9A%E8%BB%8A_01.jpg'],
-    desc: '丹麥柚木（Teak）針線車，附多層收納抽屜與布袋。\n\n此款針線車在北歐家庭中用於收納裁縫工具，現今多作為客廳邊几或床頭小桌使用，移動方便且實用性高。\n\n柚木紋路清晰，整體保存完整。',
+    desc: '丹麥柚木（Teak）針線車，附多層收納抽屜與布袋。\n\n此款針線車在北歐家庭中用於收納裁縫工具，現今多作為客廳邊几或床頭小桌使用，移動方便且實用性高。\n\n柚木紋路清晰，整體保存完整。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['Teak 柚木', '多層收納', '1960s', '第一階段']
   },
   {
     id: 3,
-    name: '柚木 二連几',
+    name: '丹麥 柚木 二連几',
     price: 7800,
     cat: 'furniture',
     origin: 'Danish',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/02_%E6%9F%9A%E6%9C%A8_%E4%BA%8C%E9%80%A3%E5%87%A0_1.JPG'],
-    desc: '丹麥柚木二連几，兩張高低相連，可拆開獨立使用或疊放收納。\n\n纖細的桌腳與光滑的柚木桌面是北歐中古設計的代表性語彙。擺在沙發旁或床邊皆宜。\n\n狀況良好，桌面有輕微使用痕跡，符合老件自然感。',
+    desc: '丹麥柚木二連几，兩張高低相連，可拆開獨立使用或疊放收納。\n\n纖細的桌腳與光滑的柚木桌面是北歐中古設計的代表性語彙。擺在沙發旁或床邊皆宜。\n\n狀況良好，桌面有輕微使用痕跡，符合老件自然感。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['Teak 柚木', '可拆式', '第一階段']
   },
   {
     id: 4,
-    name: '柚木 大邊櫃',
+    name: '丹麥 柚木 大邊櫃',
     price: 62000,
     cat: 'furniture',
     origin: 'Danish',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/03_%E6%9F%9A%E6%9C%A8_%E5%A4%A7%E9%82%8A%E6%AB%83_1.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/03_%E6%9F%9A%E6%9C%A8_%E5%A4%A7%E9%82%8A%E6%AB%83_2.JPG'],
-    desc: '丹麥柚木大型邊櫃，附推拉門與抽屜，收納容量充裕。\n\n尺寸：寬 210 × 深 43 × 高 119 cm\n\n此尺寸的邊櫃在收藏市場中十分稀有，適合作為電視櫃、玄關櫃或餐廳收納使用。\n\n柚木表面色澤溫潤，五金功能正常，整體狀況佳。',
+    desc: '丹麥柚木大型邊櫃，附推拉門與抽屜，收納容量充裕。\n\n尺寸：寬 210 × 深 43 × 高 119 cm\n\n此尺寸的邊櫃在收藏市場中十分稀有，適合作為電視櫃、玄關櫃或餐廳收納使用。柚木表面色澤溫潤，五金功能正常，整體狀況佳。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['Teak 柚木', '大型', '推拉門', '第一階段']
   },
   {
     id: 5,
-    name: '柚木 延伸餐桌',
+    name: '丹麥 柚木 延伸餐桌',
     price: 29800,
     cat: 'furniture',
     origin: 'Danish',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/04_%E6%9F%9A%E6%9C%A8_%E5%BB%B6%E4%BC%B8%E9%A4%90%E6%A1%8C_1.jpg'],
-    desc: '丹麥柚木延伸餐桌，中央可拉開放置延伸板，從 4 人桌擴展為 6-8 人桌。\n\n尺寸：寬 124.5 × 深 85 × 高 119 cm\n\n北歐餐桌的實用設計典範，平日收起即是優雅的小餐桌，有客人來時可輕鬆延伸。\n\n延伸機構順暢，桌面保存良好。',
+    desc: '丹麥柚木延伸餐桌，中央可拉開放置延伸板，從 4 人桌擴展為 6-8 人桌。\n\n尺寸：寬 124.5 × 深 85 × 高 75 cm（延伸後請詢問）\n\n北歐餐桌的實用設計典範，平日收起即是優雅的小餐桌，有客人來時可輕鬆延伸。延伸機構順暢，桌面保存良好。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['Teak 柚木', '可延伸', '4-8 人', '第一階段']
   },
   {
     id: 6,
-    name: '壓花玻璃 壁燈（一對）',
+    name: '英國 壓花玻璃 壁燈（一對）',
     price: 7800,
     cat: 'lighting',
     origin: 'British',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/07_%E5%A3%93%E8%8A%B1%E7%8E%BB%E7%92%83_%E5%A3%81%E7%87%88_1.jpg'],
-    desc: '英國老件壓花玻璃壁燈，一對販售。\n\n尺寸：約寬 22 cm\n\n壓花玻璃罩在燈光照射下會投射出細膩的光影紋路，為牆面增添溫柔的氛圍感。黃銅燈座歷經歲月，色澤更為沉穩迷人。\n\n電路已翻新，可直接使用，適合 E27 燈泡。',
+    desc: '英國老件壓花玻璃壁燈，一對販售。\n\n尺寸：約寬 22 cm\n\n壓花玻璃罩在燈光照射下會投射出細膩的光影紋路，為牆面增添溫柔的氛圍感。黃銅燈座歷經歲月，色澤更為沉穩迷人。電路已翻新，可直接使用，適合 E27 燈泡。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['British', '壓花玻璃', '一對販售', 'E27', '第一階段']
   },
   {
     id: 7,
-    name: '壓花玻璃 黃銅吸頂燈',
+    name: '英國 壓花玻璃 黃銅吸頂燈',
     price: 14800,
     cat: 'lighting',
     origin: 'British',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/06_%E5%A3%93%E8%8A%B1%E7%8E%BB%E7%92%83_%E9%BB%83%E9%8A%85%E5%90%B8%E9%A0%82%E7%87%88_1.jpg'],
-    desc: '英國老件壓花玻璃黃銅吸頂燈。\n\n圓形壓花玻璃罩搭配厚實黃銅底座，整體比例優美，適合廚房、餐廳或走廊使用。開燈後玻璃紋路若隱若現，質感細膩。\n\n直徑約 30cm，電路狀況良好。',
+    desc: '英國老件壓花玻璃黃銅吸頂燈。\n\n直徑約 30 cm\n\n圓形壓花玻璃罩搭配厚實黃銅底座，整體比例優美，適合廚房、餐廳或走廊使用。開燈後玻璃紋路若隱若現，質感細膩。電路狀況良好。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['British', '壓花玻璃', '黃銅', '吸頂', '第一階段']
   },
   {
     id: 8,
-    name: 'Verona Pendant 黃銅吊燈',
+    name: '丹麥 Verona Pendant 黃銅吊燈',
     price: 33000,
     cat: 'lighting',
     origin: 'Danish',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/09_Verona_Pendant_%E9%BB%83%E9%8A%85%E5%90%8A%E7%87%88_1.jpg'],
-    desc: '丹麥 Verona Pendant 黃銅吊燈，造型典雅，為餐桌或吧台區的點睛之作。\n\n尺寸：約直徑 48 cm\n\n黃銅材質歷久彌新，燈罩弧線優美。此款在丹麥設計史上有一定的收藏地位，市面上流通數量有限。\n\n整體狀況極佳，電路正常。',
+    desc: '丹麥 Verona Pendant 黃銅吊燈，造型典雅，為餐桌或吧台區的點睛之作。\n\n尺寸：約直徑 48 cm\n\n黃銅材質歷久彌新，燈罩弧線優美。此款在丹麥設計史上有一定的收藏地位，市面上流通數量有限。整體狀況極佳，電路正常。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['Verona', '黃銅', '吊燈', '第一階段']
   },
   {
     id: 9,
-    name: '復古黃銅 壓花玻璃吊燈',
+    name: '丹麥 復古黃銅 壓花玻璃吊燈',
     price: 14800,
     cat: 'lighting',
     origin: 'Danish',
+    vintage: true,
     sold: false,
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/05_%E5%BE%A9%E5%8F%A4%E9%BB%83%E9%8A%85_%E5%A3%93%E8%8A%B1%E7%8E%BB%E7%92%83%E5%90%8A%E7%87%88_1.jpg'],
-    desc: '丹麥復古黃銅壓花玻璃吊燈，本批老件中最為珍稀的一件。\n\n尺寸碩大，黃銅框架工藝精湛，壓花玻璃罩多面拼接，開燈後整個空間沐浴在柔和而有層次的光線之中。適合挑高空間、餐廳主燈或精品店鋪使用。\n\n年代約 1950-60s，保存狀況極佳，為難得一見的精品。',
+    desc: '丹麥復古黃銅壓花玻璃吊燈，本批老件中最為珍稀的一件。\n\n尺寸碩大，黃銅框架工藝精湛，壓花玻璃罩多面拼接，開燈後整個空間沐浴在柔和而有層次的光線之中。適合挑高空間、餐廳主燈或精品店鋪使用。\n\n年代約 1950-60s，保存狀況極佳，為難得一見的精品。\n\n📍 地點：雲林斗南\n🛍 購置：萬物 Wonderwood Vintage',
     tags: ['1950-60s', '黃銅', '壓花玻璃', '稀有', '第一階段']
+  },
+  {
+    id: 10,
+    name: '丹麥 Bloomingville Luie 相思木餐桌',
+    price: 22000,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/10_%E4%B8%B9%E9%BA%A5_Bloomingville_Luie_%E7%9B%B8%E6%80%9D%E6%9C%A8%E9%A4%90%E6%A1%8C_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/10_%E4%B8%B9%E9%BA%A5_Bloomingville_Luie_%E7%9B%B8%E6%80%9D%E6%9C%A8%E9%A4%90%E6%A1%8C_2.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/10_%E4%B8%B9%E9%BA%A5_Bloomingville_Luie_%E7%9B%B8%E6%80%9D%E6%9C%A8%E9%A4%90%E6%A1%8C_3.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/10_%E4%B8%B9%E9%BA%A5_Bloomingville_Luie_%E7%9B%B8%E6%80%9D%E6%9C%A8%E9%A4%90%E6%A1%8C_4.png'],
+    desc: '丹麥 Bloomingville Luie 系列相思木實木餐桌。\n\n尺寸：寬 200 × 深 90 × 高 75 cm\n\n以相思木（Acacia）打造，每一張桌面的木紋皆為獨一無二的自然紋路。桌腳採金屬材質，穩固耐用，北歐簡約設計融合溫潤木材質感，適合 4–6 人使用。\n\n整體狀況良好。\n\n🔗 商品參考：https://accessoriesforthehome.co.uk/dining-tables/1937-bloomingville-luie-acacia-wood-dining-table-5711173265107.html\n\n📍 地點：台南安南區\n🛍 購置：Marais 瑪黑家居',
+    tags: ['Bloomingville', '相思木', '實木', '第二階段']
+  },
+  {
+    id: 11,
+    name: '丹麥 Menu Synnes 橡木皮革單椅',
+    price: 6000,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/11_%E4%B8%B9%E9%BA%A5_Menu_Synnes_%E6%A9%A1%E6%9C%A8%E7%9A%AE%E9%9D%A9%E5%96%AE%E6%A4%85_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/11_%E4%B8%B9%E9%BA%A5_Menu_Synnes_%E6%A9%A1%E6%9C%A8%E7%9A%AE%E9%9D%A9%E5%96%AE%E6%A4%85_2.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/11_%E4%B8%B9%E9%BA%A5_Menu_Synnes_%E6%A9%A1%E6%9C%A8%E7%9A%AE%E9%9D%A9%E5%96%AE%E6%A4%85_3.jpg'],
+    desc: '丹麥設計品牌 Menu 出品，Synnes 系列橡木皮革單椅，由挪威設計師 Falke Svatun 操刀設計。\n\n尺寸：寬 47 × 深 48.5 × 高 80 cm，座高 45 cm\n\n將一片夾板嵌入椅座並搭配弧形靠背，在結構穩固的同時大幅減少材料用量，是北歐設計中「少即是多」的典範。椅框為天然橡木，座面搭配皮革坐墊。\n\n整體狀況良好。\n\n🔗 商品參考：https://www.mountainliving.com.tw/dining-chair/7910039\n\n📍 地點：台南安南區\n🛍 購置：Mountain Living',
+    tags: ['Menu', 'Synnes', '橡木', '皮革', '第二階段']
+  },
+  {
+    id: 12,
+    name: '無印良品 橡木組合床台（單人）',
+    price: 6300,
+    cat: 'furniture',
+    origin: 'MUJI',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/12_%E7%84%A1%E5%8D%B0%E8%89%AF%E5%93%81_%E6%A9%A1%E6%9C%A8%E7%B5%84%E5%90%88%E5%BA%8A%E5%8F%B0_%E5%96%AE%E4%BA%BA_1.png'],
+    desc: '無印良品橡木組合床台，單人尺寸，附原廠床腳。\n\n床台尺寸：103 × 202 cm，含床腳高度約 31 cm\n\n榫接工法組合，穩固耐用，簡約設計適合各種居家風格。床腳可拆卸，方便搬運。\n\n整體狀況良好。\n\n🔗 商品參考：https://shop.muji.tw/SalePage/Index/9543482\n\n📍 地點：台南安南區',
+    tags: ['無印良品', 'MUJI', '橡木', '單人床', '第二階段']
+  },
+  {
+    id: 13,
+    name: '英國 Original BTC Cosmo Prismatic 吊燈',
+    price: 17360,
+    cat: 'lighting',
+    origin: 'British',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/13_Original_BTC__Cosmo_Prismatic_%E5%90%8A%E7%87%88_1.png'],
+    desc: '英國手工燈飾品牌 Original BTC 出品，Cosmo Prismatic 系列吊燈。\n\n半月形骨瓷燈罩搭配立體稜紋紋理，溫柔燈光透過骨瓷散發細膩光感。燈罩上的紋路倒映於鍍鉻金屬，層次豐富。棉質編織纜線為點睛細節，英國手工製造。\n\n整體狀況良好，電路正常。\n\n🔗 商品參考：https://www.originalbtc.com.tw/products/cosmo-prismatic-pendant-light\n\n📍 地點：台南中西區',
+    tags: ['Original BTC', '骨瓷', '吊燈', '英國製', '第二階段']
+  },
+  {
+    id: 14,
+    name: '英國 Original BTC Phane Large Prismatic 吊燈',
+    price: 21560,
+    cat: 'lighting',
+    origin: 'British',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/14_Original_BTC__Phane_Large__Prismatic_%E5%90%8A%E7%87%88_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/14_Original_BTC__Phane_Large__Prismatic_%E5%90%8A%E7%87%88_2.png'],
+    desc: '英國手工燈飾品牌 Original BTC 出品，Phane Large Prismatic 系列吊燈，靈感源自巴黎地鐵燈具。\n\n尺寸：直徑 42.5 cm × 高 34 cm，纜線長 180 cm\n\n稜紋玻璃燈罩弧度寬闊，光線柔和均勻散射，適合作為餐廳或客廳的主燈。鋼鋁結構，黑白棉質編織纜線，英國手工製造。\n\n整體狀況良好，電路正常。\n\n🔗 商品參考：https://www.originalbtc.com.tw/products/phane-large\n\n📍 地點：台南中西區',
+    tags: ['Original BTC', '稜紋玻璃', '吊燈', '英國製', '第二階段']
+  },
+  {
+    id: 15,
+    name: '荷蘭 Dutchbone Class 深木餐桌',
+    price: 22000,
+    cat: 'furniture',
+    origin: 'Dutch',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/15_%E8%8D%B7%E8%98%AD__Dutchbone_Class_%E6%B7%B1%E6%9C%A8%E9%A4%90%E6%A1%8C_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/15_%E8%8D%B7%E8%98%AD__Dutchbone_Class_%E6%B7%B1%E6%9C%A8%E9%A4%90%E6%A1%8C_2.JPG'],
+    desc: '荷蘭設計品牌 Dutchbone Class 系列深色木質餐桌，人字拼木紋桌面為最大亮點。\n\n尺寸：高 75 × 寬 180 × 深 90 cm\n\n深色木材搭配人字形（Herringbone）拼接紋路，視覺層次豐富，適合 6 人使用。桌腳金屬材質，工業風與自然感兼具。\n\n整體狀況良好。\n\n🔗 商品參考：https://accessoriesforthehome.co.uk/dining-tables/1189-dutchbone-class-dark-wood-dining-table-180cm-or-220cm.html\n\n📍 地點：台南中西區\n🛍 購置：Marais 瑪黑家居',
+    tags: ['Dutchbone', '人字拼', '深色木', '第二階段']
+  },
+  {
+    id: 16,
+    name: '丹麥 House Doctor Original 餐椅組',
+    price: 21000,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/16_%E4%B8%B9%E9%BA%A5_House__Doctor_Original__%E9%A4%90%E6%A4%85%E7%B5%84_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/16_%E4%B8%B9%E9%BA%A5_House__Doctor_Original__%E9%A4%90%E6%A4%85%E7%B5%84_2.png'],
+    desc: '丹麥 House Doctor Original 系列餐椅，共六張（黑色三張 + 深棕色三張）。\n\n尺寸：長 58 × 寬 47 × 高 83 cm，座高 47 cm\n材質：夾板 + 鐵框\n\n以復古校椅為設計靈感，鐵框與夾板的組合兼具工業感與輕盈感，適合搭配各種風格餐桌。兩色混搭或分開使用皆宜。\n\n整體狀況良好。\n\n🔗 商品參考：https://www.fig1.co.uk/house-doctor-original-dining-chair-in-dark-brown.ir\n\n📍 地點：台南中西區\n🛍 購置：Marais 瑪黑家居',
+    tags: ['House Doctor', '餐椅', '六張', '黑色', '深棕色', '第二階段']
+  },
+  {
+    id: 17,
+    name: '荷蘭 Zuiver Benson 餐椅組',
+    price: 13000,
+    cat: 'furniture',
+    origin: 'Dutch',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/17_%E8%8D%B7%E8%98%AD_Zuiver__Benson_%E9%A4%90%E6%A4%85%E7%B5%84_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/17_%E8%8D%B7%E8%98%AD_Zuiver__Benson_%E9%A4%90%E6%A4%85%E7%B5%84_2.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/17_%E8%8D%B7%E8%98%AD_Zuiver__Benson_%E9%A4%90%E6%A4%85%E7%B5%84_3.png'],
+    desc: '荷蘭設計品牌 Zuiver Benson 系列餐椅，共兩張，藍灰色布面。\n\n尺寸：寬 47 × 深 56 × 高 81 cm，座高 46.5 cm\n材質：90% 聚酯纖維 + 10% 尼龍布面，夾板椅座背附 PU 泡棉，黑色烤漆鋼框\n\n以小巧的「椅鞋」造型腳為設計亮點，支撐性佳，乘重達 110 kg。藍灰色布面百搭耐看。\n\n整體狀況良好。\n\n🔗 商品參考：https://www.mathidesign.com/en/chairs/1527-grey-benson-armchair-8718548048874.html\n\n📍 地點：台南中西區\n🛍 購置：Marais 瑪黑家居',
+    tags: ['Zuiver', 'Benson', '餐椅', '兩張', '藍灰色', '第二階段']
+  },
+  {
+    id: 18,
+    name: '丹麥 House Doctor 芒果木雙層小邊櫃',
+    price: 9800,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/18_%E4%B8%B9%E9%BA%A5_House___Doctor_%E8%8A%92%E6%9E%9C%E6%9C%A8%E9%9B%99%E5%B1%A4%E5%B0%8F%E9%82%8A%E6%AB%83_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/18_%E4%B8%B9%E9%BA%A5_House___Doctor_%E8%8A%92%E6%9E%9C%E6%9C%A8%E9%9B%99%E5%B1%A4%E5%B0%8F%E9%82%8A%E6%AB%83_2.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/18_%E4%B8%B9%E9%BA%A5_House___Doctor_%E8%8A%92%E6%9E%9C%E6%9C%A8%E9%9B%99%E5%B1%A4%E5%B0%8F%E9%82%8A%E6%AB%83_3.png'],
+    desc: '丹麥 House Doctor 芒果木雙層小邊櫃，復古工藝感十足。\n\n尺寸：寬 60 × 深 40 × 高 80 cm\n材質：芒果木\n\n芒果木天然紋路搭配深色塗裝，復古氣息濃厚。雙層設計提供彈性收納，可作為客廳邊几、玄關收納或臥室床頭邊櫃使用。\n\n整體狀況良好。\n\n🔗 商品參考：https://www.skandeko.de/produkt/house-doctor-antike-kommode-club\n\n📍 地點：台南中西區\n🛍 購置：Marais 瑪黑家居',
+    tags: ['House Doctor', '芒果木', '邊櫃', '第二階段']
+  },
+  {
+    id: 19,
+    name: '丹麥 Bloomingville 雙人沙發',
+    price: 16000,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/19_%E4%B8%B9%E9%BA%A5_Bloomingville__%E9%9B%99%E4%BA%BA%E6%B2%99%E7%99%BC_1.PNG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/19_%E4%B8%B9%E9%BA%A5_Bloomingville__%E9%9B%99%E4%BA%BA%E6%B2%99%E7%99%BC_2.JPG'],
+    desc: '丹麥設計品牌 Bloomingville 雙人沙發。\n\n尺寸：寬 195 × 深 91 × 高 81 cm\n\n北歐簡約線條，比例寬敞舒適，適合兩人並坐。因家有貓咪，布面有貓抓痕，售價已反映於現況，喜歡沙發本身結構與設計的朋友歡迎詢問。\n\n📍 地點：台南中西區\n🛍 購置：Marais 瑪黑家居',
+    tags: ['Bloomingville', '雙人沙發', '瑕疵優惠', '第二階段']
+  },
+  {
+    id: 20,
+    name: '丹麥 Bloomingville 圓形咖啡茶几組',
+    price: 6800,
+    cat: 'furniture',
+    origin: 'Danish',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/20_%E4%B8%B9%E9%BA%A5__Bloomingville_%E5%9C%93%E5%BD%A2%E5%92%96%E5%95%A1%E8%8C%B6%E5%B9%BE%E7%B5%84_1.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/20_%E4%B8%B9%E9%BA%A5__Bloomingville_%E5%9C%93%E5%BD%A2%E5%92%96%E5%95%A1%E8%8C%B6%E5%B9%BE%E7%B5%84_2.png'],
+    desc: '丹麥設計品牌 Bloomingville 圓形咖啡茶几，加贈藤編咖啡茶几一張。\n\n主茶几尺寸：直徑 54 cm × 高 40 cm\n\n圓形桌面線條柔和，北歐簡約設計適合搭配各種沙發。附贈藤編茶几可作為層疊擺放的側几，豐富客廳層次感。一組兩件，超值組合。\n\n整體狀況良好。\n\n📍 地點：台南中西區\n🛍 購置：Marais 瑪黑家居',
+    tags: ['Bloomingville', '圓形茶几', '藤編', '兩件組', '第二階段']
   }
 ];
 
@@ -594,7 +724,7 @@ function render() {
         <div class="card-body">
           <div class="card-name">${i.name}</div>
           <div class="card-price">${fmt(i.price)}</div>
-          ${i.sold ? '<div class="sold-label">已售出</div>' : '<div class="vtag">Vintage</div>'}
+          ${i.sold ? '<div class="sold-label">已售出</div>' : `<div class="vtag">${i.vintage ? 'Vintage' : '二手品牌單品'}</div>`}
         </div>
       </div>`;
   }).join('');
@@ -611,7 +741,7 @@ function openModal(id) {
   if (!gCurrent) return;
   gIdx = 0;
   document.getElementById('galOrigin').textContent = gCurrent.origin;
-  document.getElementById('mOrigin').textContent = gCurrent.origin + ' Vintage';
+  document.getElementById('mOrigin').textContent = gCurrent.origin + (gCurrent.vintage ? ' Vintage' : '');
   document.getElementById('modalTitle').textContent = gCurrent.name;
   document.getElementById('mPrice').textContent = fmt(gCurrent.price);
   document.getElementById('mDesc').textContent = gCurrent.desc;
