@@ -384,6 +384,8 @@ body{
       <button class="chip on" onclick="setcat(this,'all')">全部</button>
       <button class="chip" onclick="setcat(this,'furniture')">家具 Furniture</button>
       <button class="chip" onclick="setcat(this,'lighting')">燈具 Lighting</button>
+      <button class="chip" onclick="setcat(this,'appliance')">家電 Appliance</button>
+      <button class="chip" onclick="setcat(this,'baby')">母嬰 Baby</button>
     </div>
 
     <div class="srch">
@@ -675,13 +677,59 @@ const DATA = [
     imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/20_%E6%8C%AA%E5%A8%81_Stokke_Sleepi_V3_%E5%AC%B0%E5%85%92%E5%BA%8A_1.png', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/20_%E6%8C%AA%E5%A8%81_Stokke_Sleepi_V3_%E5%AC%B0%E5%85%92%E5%BA%8A_2.jpg'],
     desc: '挪威 Stokke Sleepi V3 成長型嬰兒床，從新生兒使用至約 5 歲。\n\n尺寸：迷你 82 × 67 × 87 cm → 中床 141 × 74 × 87 cm\n材質：山毛櫸木，7年保固\n\n標誌性橢圓形設計模擬媽媽子宮環境，給寶寶安全感。四段高度調節，側欄可拆卸，靜音滑輪方便移動。部分配件未拆封，額外贈送大小床 Zara 床包各一組。\n\n🔗 商品參考：https://www.funhouse.biz/products/591301g\n\n📍 地點：台南安南區',
     tags: ['Stokke', 'Sleepi', '嬰兒床', '成長型', '第二階段']
+  }  ,
+  {
+    id: 21,
+    name: 'Panasonic 桌上型洗碗機',
+    price: 9800,
+    cat: 'appliance',
+    origin: 'Panasonic',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/21_Panasonic_%E6%A1%8C%E4%B8%8A%E5%9E%8B%E6%B4%97%E7%A2%97%E6%A9%9F_1.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/21_Panasonic_%E6%A1%8C%E4%B8%8A%E5%9E%8B%E6%B4%97%E7%A2%97%E6%A9%9F_2.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/21_Panasonic_%E6%A1%8C%E4%B8%8A%E5%9E%8B%E6%B4%97%E7%A2%97%E6%A9%9F_3.JPG'],
+    desc: 'Panasonic 桌上型洗碗機，使用不到兩年，功能正常。\n\n省水省時，適合小家庭或租屋族使用。整體狀況良好，無明顯損傷。\n\n📍 地點：台南安南區',
+    tags: ['Panasonic', '洗碗機', '家電', '桌上型']
+  },
+  {
+    id: 22,
+    name: 'Cybex Gazelle S 雙人推車',
+    price: 22000,
+    cat: 'baby',
+    origin: 'Cybex',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/22_Cybex_GazelleS_%E9%9B%99%E4%BA%BA%E6%8E%A8%E8%BB%8A_1.jpg', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/22_Cybex_GazelleS_%E9%9B%99%E4%BA%BA%E6%8E%A8%E8%BB%8A_2.jpg', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/22_Cybex_GazelleS_%E9%9B%99%E4%BA%BA%E6%8E%A8%E8%BB%8A_3.jpg'],
+    desc: 'Cybex Gazelle S 雙人推車，使用頻率低，狀況極佳。\n\n座椅為奶茶色搭配白色，原廠置物籃全新未使用。\n\n加贈 Cybex Cloud T Plus 提籃（九成新）及推車轉接器。\n\n📍 地點：台南安南區',
+    tags: ['Cybex', 'Gazelle S', '雙人推車', '嬰兒用品', '附提籃']
+  }  ,
+  {
+    id: 23,
+    name: '丹麥 Konges Sløjd 貝殼背巾',
+    price: 2000,
+    cat: 'baby',
+    origin: 'Danish',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/23_%E4%B8%B9%E9%BA%A5_Konges_Slojd_%E8%B2%9D%E6%AE%BC%E8%83%8C%E5%B7%BE_1.JPG', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/23_%E4%B8%B9%E9%BA%A5_Konges_Slojd_%E8%B2%9D%E6%AE%BC%E8%83%8C%E5%B7%BE_2.jpg', 'https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/23_%E4%B8%B9%E9%BA%A5_Konges_Slojd_%E8%B2%9D%E6%AE%BC%E8%83%8C%E5%B7%BE_3.jpg'],
+    desc: '丹麥品牌 Konges Sløjd 貝殼背巾，九成新，附原廠品牌提袋。\n\n設計簡約優雅，輕巧好攜帶，適合新生兒至幼兒使用。\n\n📍 地點：台南安南區',
+    tags: ['Konges Sløjd', '背巾', '母嬰用品', '丹麥品牌']
+  },
+  {
+    id: 24,
+    name: 'Philips 飛利浦 溫奶器',
+    price: 1200,
+    cat: 'baby',
+    origin: 'Philips',
+    sold: false,
+    imgs: ['https://raw.githubusercontent.com/thekatherine-cyj/moving-sale/main/images/24_%E5%85%A8%E6%96%B0_Philips%E9%A3%9B%E5%88%A9%E6%B5%A6_%E6%BA%AB%E5%A5%B6%E5%99%A8_1.png'],
+    desc: '全新 Philips 飛利浦溫奶器，加贈 Chicco 隨身溫奶器一個。\n\n兩件組合超值，適合新手爸媽備用。\n\n📍 地點：台南安南區',
+    tags: ['Philips', '飛利浦', '溫奶器', '全新', '附Chicco', '母嬰用品']
   }
 ];
 
 // ─── 圖示對應（無照片時使用）───────────────────────────
 const ICONS = {
   furniture: 'ti-armchair',
-  lighting: 'ti-lamp'
+  lighting: 'ti-lamp',
+  appliance: 'ti-wash-machine',
+  baby: 'ti-baby-carriage'
 };
 
 // ─── 狀態 ───────────────────────────────────────────────
