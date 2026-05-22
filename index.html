@@ -744,7 +744,13 @@ function openModal(id) {
   document.getElementById('mOrigin').textContent = gCurrent.origin + (gCurrent.vintage ? ' Vintage' : '');
   document.getElementById('modalTitle').textContent = gCurrent.name;
   document.getElementById('mPrice').textContent = fmt(gCurrent.price);
-  document.getElementById('mDesc').textContent = gCurrent.desc;
+  const descHtml = gCurrent.desc
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/(https?:\/\/[^\s\n]+)/g, '<a href="$1" target="_blank" rel="noopener" style="color:var(--brown);word-break:break-all;">$1</a>')
+    .replace(/\n/g, '<br>');
+  document.getElementById('mDesc').innerHTML = descHtml;
   document.getElementById('mMeta').innerHTML = gCurrent.tags.map(t => `<span class="meta-tag">${t}</span>`).join('');
   renderGallery();
   document.getElementById('overlay').classList.add('open');
